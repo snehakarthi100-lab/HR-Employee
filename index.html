@@ -1,0 +1,35 @@
+<div class="container">
+    <h1>HR Employee Leave Management Tool</h1>
+
+    <div class="form-section">
+        <input type="text" id="employee" placeholder="Employee Name">
+
+        <select id="leaveType">
+            <option value="">Select Leave Type</option>
+            <option>Sick Leave</option>
+            <option>Casual Leave</option>
+            <option>Vacation</option>
+        </select>
+
+        <input type="date" id="startDate">
+        <input type="date" id="endDate">
+
+        <button onclick="applyLeave()">Apply Leave</button>
+    </div>
+
+    <h2>Leave Requests</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Employee</th>
+                <th>Leave Type</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="leaveTable"></tbody>
+    </table>
+</div>
